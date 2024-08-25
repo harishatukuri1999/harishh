@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish Atukuri - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .title {
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Harish Atukuri</h1>
+        <p id="developer-title" class="title">Backend Developer</p>
+        <p>Email: <a href="mailto:harishmcah@gmail.com">harishmcah@gmail.com</a> | Phone: 9160428801</p>
+    </header>
+    
+    <section id="career-objective">
+        <h2>Career Objective</h2>
+        <p>As a Backend Developer at Clocktos Infotech, I have honed my skills in C#, ASP.NET, SQL Server, and manual testing, successfully contributing to the development and optimization of complex software solutions in 'Clocktos Educational ERP Software Project.' My previous experience as a Full Stack Developer Intern at Akiyam Solutions Pvt Ltd allowed me to gain comprehensive knowledge in both frontend development and  Manual Testing, working on significant projects like 'The Witcher 3 Official Website'. I am now seeking to leverage my extensive experience and technical expertise in a challenging role where I can contribute to innovative projects and continue to grow professionally."</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C#, ASP.Net</li>
+            <li>SQL Server</li>
+            <li>Strong Debugging Skills</li>
+            <li>Testing and Debugging</li>
+            <li>HTML and CSS</li>
+            <li>Manual Testing</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Clocktos Infotech - Software Developer</h3>
+        <p><strong>22/01/2024 - Present</strong></p>
+        <p><strong>Roles And Responsibilities Are:-</strong></p>
+        <ul>
+            <li>Design, develop, and maintain ASP.NET web applications.</li>
+            <li>Create web forms and handle front-end and back-end integration.</li>
+            <li>Write clean, scalable, and efficient code using C# and ASP.NET.</li>
+            <li>Develop and maintain SQL databases, including creating and optimizing queries.</li>
+            <li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
+            <li>Troubleshoot and debug applications to ensure optimal performance.</li>
+            <li>Participate in code reviews to maintain code quality and share knowledge with team members.</li>
+            <li>Stay updated with the latest industry trends and technologies.</li>
+            <li>Creating stored procedures as for requirement.</li>
+            <li>Creating APIs as for requirement and Maintain created APIs.</li>
+        </ul>
+
+        <h3>Akiyam Solutions Pvt Ltd - Full Stack Developer Intern</h3>
+        <p><strong>06/02/2023 - 12/07/2023</strong></p>
+        <p><strong>Roles And Responsibilities Are:-</strong></p>
+        <ul>
+            <li>Use markup languages like HTML to create user-friendly web pages.</li>
+            <li>Maintain and improve website performance.</li>
+            <li>Optimize applications for maximum speed.</li>
+            <li>Design mobile-based features.</li>
+            <li>Collaborate with back-end developers and web designers to improve usability.</li>
+            <li>Get feedback from, and build solutions for, users and customers.</li>
+            <li>Write functional requirement documents and guides.</li>
+            <li>Create quality mockups and prototypes.</li>
+            <li>Help back-end developers with coding and troubleshooting.</li>
+            <li>Ensure high quality graphic standards and brand consistency.</li>
+            <li>Stay up-to-date on emerging technologies.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>Clocktos ERP Software</h3>
+        <p>Digitalization of institutional workflows, data, and documentation of all academic and non-academic operations, including management of admissions, timetables, assessments, faculty, and student’s performance, communications, reports, learning resources, inventory, finances, hostels, inquiries, events, transports, and more. Data storage, management, analysis, and report generation for decision-making by the academic heads and management.Customized smart solutions for attendance, performance, etc. are provided to quickly and accurately communicate important data and reports as required by the institution. Accurate report generation to comply with specific regulatory requirements. Data security using cutting-edge security standards to safeguard institutional data from unauthorized access both inside and externally, along with multiple backups.
+            </p>
+        <ul>
+            <li>Design, develop, and maintain ASP.NET web applications.</li>
+            <li>Create web forms and handle front-end and back-end integration.</li>
+            <li>Write clean, scalable, and efficient code using C# and ASP.NET.</li>
+            <li>Develop and maintain SQL databases, including creating and optimizing queries.</li>
+            <li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
+            <li>Troubleshoot and debug applications to ensure optimal performance.</li>
+            <li>Participate in code reviews to maintain code quality and share knowledge with team members.</li>
+            <li>Stay updated with the latest industry trends and technologies.</li>
+            <li>Creating stored procedures as for requirement.</li>
+            <li>Creating APIs as for requirement and Maintain created APIs.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Master of Computer Applications:</strong> Computer Applications, 09/2022<br>
+           R.V.R & J.C College Of Engineering- Guntur, India</p>
+        <p><strong>Bachelor of Science:</strong> Computer science And Programming<br>
+           Acharya Nagarjuna University- Guntur, India</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Harish Atukuri. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function changeTitle() {
+            var titleElement = document.getElementById('developer-title');
+            titleElement.style.opacity = '0'; // Fade out the current title
+    
+            setTimeout(function() {
+                // Toggle the title text
+                if (titleElement.textContent === 'Software Developer') {
+                    titleElement.textContent = 'Backend Developer';
+                } else {
+                    titleElement.textContent = 'Software Developer';
+                }
+                titleElement.style.opacity = '1'; // Fade in the new title
+    
+                // Call the function again to create a loop
+                setTimeout(changeTitle, 2000); // Wait for 2 seconds before changing again
+            }, 500); // Wait for the fade-out transition to complete (0.5 seconds)
+        }
+    
+        // Start the title change after an initial delay
+        setTimeout(changeTitle, 2000); // Initial delay before the first change
+    </script>
+    
+</body>
+</html>
